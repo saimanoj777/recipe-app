@@ -1,4 +1,4 @@
-const BASE = 'http://localhost:5000';
+const BASE = 'https://recipe-app-iv8o.onrender.com';
 
 export async function fetchRecipes(page=1, limit=15) {
   const res = await fetch(`${BASE}/api/recipes?page=${page}&limit=${limit}`);
