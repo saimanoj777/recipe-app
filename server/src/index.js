@@ -3,6 +3,9 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import { connectDB } from './db.js';
 import recipesRouter from './routes/recipes.js';
+// Example in index.js
+const MONGO_URI = process.env.MONGO_URI;
+
 
 dotenv.config();
 const app = express();
